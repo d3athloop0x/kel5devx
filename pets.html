@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PetHouse - Home</title>
+    <title>PetHouse - Pets</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,21 +33,19 @@
       };
     </script>
   </head>
+
   <body class="bg-ph-bg font-sans text-gray-600 antialiased overflow-x-hidden">
+    <!-- NAVBAR -->
     <nav class="w-full px-6 py-4 md:py-6 relative z-50">
       <div class="flex items-center justify-between max-w-7xl mx-auto">
-        <div
-          class="text-2xl md:text-3xl font-extrabold text-ph-blue tracking-tight"
-        >
+        <div class="text-2xl md:text-3xl font-extrabold text-ph-blue tracking-tight">
           PETHOUSE
         </div>
 
-        <div
-          class="hidden md:flex items-center space-x-8 font-medium text-gray-500"
-        >
-          <a href="index.html" class="text-ph-blue font-bold">Home</a>
+        <div class="hidden md:flex items-center space-x-8 font-medium text-gray-500">
+          <a href="index.html" class="hover:text-ph-blue transition">Home</a>
           <a href="about.html" class="hover:text-ph-blue transition">About</a>
-          <a href="pets.html" class="hover:text-ph-blue transition">Pets</a>
+          <a href="pets.html" class="text-ph-blue font-bold">Pets</a>
           <a href="faq.html" class="hover:text-ph-blue transition">FAQ</a>
         </div>
 
@@ -73,10 +71,7 @@
             </svg>
           </a>
 
-          <button
-            id="menu-btn"
-            class="md:hidden text-ph-blue focus:outline-none"
-          >
+          <button id="menu-btn" class="md:hidden text-ph-blue focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -99,74 +94,87 @@
         id="mobile-menu"
         class="hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 py-4 px-6 flex flex-col gap-4 md:hidden"
       >
-        <a href="index.html" class="text-ph-blue font-bold">Home</a>
-        <a href="about.html" class="text-gray-600 hover:text-ph-blue">About</a>
-        <a href="pets.html" class="text-gray-600 hover:text-ph-blue">Pets</a>
-        <a href="faq.html" class="text-gray-600 hover:text-ph-blue">FAQ</a>
+        <a href="index.html" class="hover:text-ph-blue">Home</a>
+        <a href="about.html" class="hover:text-ph-blue">About</a>
+        <a href="pets.html" class="text-ph-blue font-bold">Pets</a>
+        <a href="faq.html" class="hover:text-ph-blue">FAQ</a>
       </div>
     </nav>
 
-    <section class="relative w-full max-w-7xl mx-auto mt-4 md:mt-10">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div
-          class="px-6 order-2 md:order-1 text-center md:text-left mb-10 md:mb-0"
-        >
-          <h1
-            class="text-4xl md:text-6xl font-extrabold text-ph-blue leading-tight mb-4"
-          >
-            Let's Find Your Friend
-          </h1>
-          <p
-            class="text-gray-500 mb-8 max-w-md mx-auto md:mx-0 leading-relaxed"
-          >
-            Browse pets from our ever growing network of multiple shelters and
-            rescues for your perfect match.
-          </p>
-          <button
-            class="bg-ph-yellow text-ph-blue font-bold px-8 py-3 rounded-full hover:bg-yellow-400 transition shadow-lg"
-          >
-            Start Here
-          </button>
-        </div>
 
-        <div class="order-1 md:order-2 relative">
-          <div
-            class="bg-ph-pink w-full h-[300px] md:h-[450px] rounded-l-[3rem] md:rounded-l-[5rem] rounded-tr-none ml-auto relative flex items-end justify-center overflow-hidden"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1623387641168-d9803ddd3f35?q=80&w=800&auto=format&fit=crop"
-              alt="Cat and Dog"
-              class="absolute bottom-0 h-[110%] object-cover object-center md:right-10 filter drop-shadow-xl transform translate-y-4"
-            />
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <h1 class="text-4xl font-extrabold text-ph-blue text-center mb-12">
+        Our Pets
+      </h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+          <img
+            src="https://images.unsplash.com/photo-1507146426996-ef05306b995a"
+            class="w-full h-52 object-cover"
+            alt="Golden Retriever"
+          />
+          <div class="p-5">
+            <h2 class="text-xl font-bold text-ph-blue">Milo</h2>
+            <p class="text-sm mt-2 text-gray-600 leading-relaxed">
+              A cheerful Golden Retriever who brings socks as gifts and wiggles
+              his tail like a fan whenever walk time is mentioned.
+            </p>
           </div>
         </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+          <img
+            src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131"
+            class="w-full h-52 object-cover"
+            alt="Gray Cat"
+          />
+          <div class="p-5">
+            <h2 class="text-xl font-bold text-ph-blue">Luna</h2>
+            <p class="text-sm mt-2 text-gray-600 leading-relaxed">
+              A gentle gray cat who follows people like a tiny bodyguard and
+              often makes cute “prrr-meow” sounds like she's talking.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+          <img
+            src="https://images.unsplash.com/photo-1556838803-cc94986cb631?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="w-full h-52 object-cover"
+            alt="Holland Lop Rabbit"
+          />
+          <div class="p-5">
+            <h2 class="text-xl font-bold text-ph-blue">Bobo</h2>
+            <p class="text-sm mt-2 text-gray-600 leading-relaxed">
+              An adorable Holland Lop who stands on two legs when he smells
+              treats and gently nudges clothes to ask for attention.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+          <img
+            src="https://images.unsplash.com/photo-1592159371936-61a70cbeb5f7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="w-full h-52 object-cover"
+            alt="Syrian Hamster"
+          />
+          <div class="p-5">
+            <h2 class="text-xl font-bold text-ph-blue">Puffy</h2>
+            <p class="text-sm mt-2 text-gray-600 leading-relaxed">
+              A lively Syrian hamster with chubby cheeks, always organizing his
+              little nest and running on his wheel like an athlete.
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <div class="bg-ph-blue w-full py-6 md:py-10 mt-8">
-      <div
-        class="max-w-6xl mx-auto px-6 grid grid-cols-3 gap-4 text-center text-white divide-x divide-blue-400/30"
-      >
-        <div>
-          <h3 class="text-2xl md:text-4xl font-bold">115+</h3>
-          <p class="text-xs md:text-sm text-blue-200 mt-1">Pets Available</p>
-        </div>
-        <div>
-          <h3 class="text-2xl md:text-4xl font-bold">58+</h3>
-          <p class="text-xs md:text-sm text-blue-200 mt-1">Matches Made</p>
-        </div>
-        <div>
-          <h3 class="text-2xl md:text-4xl font-bold">173+</h3>
-          <p class="text-xs md:text-sm text-blue-200 mt-1">Animals Saved</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Footer -->
     <footer class="bg-ph-blue text-white mt-0">
-      <div
-        class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10"
-      >
+      <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
           <h2 class="text-2xl font-extrabold tracking-wide">PETHOUSE</h2>
           <p class="text-blue-200 mt-3 text-sm leading-relaxed">
@@ -207,6 +215,7 @@
         © 2025 PETHOUSE. All rights reserved.
       </div>
     </footer>
+
     <script>
       const menuBtn = document.getElementById("menu-btn");
       const mobileMenu = document.getElementById("mobile-menu");
